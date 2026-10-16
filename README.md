@@ -48,7 +48,7 @@ Build the virtual environment.
 
 ## Others
 
-See the (Python venv docs)[https://docs.python.org/3/library/venv.html] for
+See the [Python venv docs](https://docs.python.org/3/library/venv.html) for
 guidance on setting up the virtual environment on other OSs and shells.
 
 ## Running the program
