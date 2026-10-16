@@ -302,6 +302,8 @@ def _solve(state: State, target_number: int, lookup: List[State]) -> Tuple[Expre
     lookup.append(state)
     return None, lookup
 
+# wrapper for _solve providing an empty lookup list and discarding the lookup
+# list before returning the solution to the caller
 def solve(state: State, target_number: int) -> Expression | None:
     solution, _ = _solve(state, target_number, list())
 
