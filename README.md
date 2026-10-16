@@ -34,11 +34,17 @@ lowest heuristic scores.
 
 # How do I use the solver?
 
+This app is [publicly deployed on Streamlit](https://countdown-numbers-solver.streamlit.app/).
+
+Alternatively, you can clone, build, and run it locally:
+
+## Running locally
+
 Clone this repo.
 
 Build the virtual environment.
 
-## Linux, Bash/Zsh
+### Linux, Bash/Zsh
 
 ```python3 -m venv .venv```
 
@@ -46,12 +52,12 @@ Build the virtual environment.
 
 ```pip install -r requirements.txt```
 
-## Others
+### Others
 
 See the [Python venv docs](https://docs.python.org/3/library/venv.html) for
 guidance on setting up the virtual environment on other OSs and shells.
 
-## Running the program
+### Running the program
 
 Once the required packages are installed, the program can be run. The solver
 exposes a simple web interface made with Streamlit.
