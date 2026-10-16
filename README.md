@@ -38,11 +38,19 @@ Clone this repo.
 
 Build the virtual environment.
 
+## Venv {.tabset}
+
+### Linux
+
 ```python3 -m venv .venv```
 
 ```source .venv/bin/activate```
 
 ```pip install -r requirements.txt```
+
+### Windows
+
+## {-}
 
 Once the required packages are installed, the program can be run. The solver
 exposes a simple web interface made with Streamlit.
