@@ -254,7 +254,7 @@ need not be checked again, saving time. This is important as any given state
 may have multiple ways of reaching it which would otherwise be searched
 indivdually.
 """
-def solve(state: State, target_number: int, lookup: List[State]=list()) -> Tuple[Expression | None, List[State]]:
+def _solve(state: State, target_number: int, lookup: List[State]) -> Tuple[Expression | None, List[State]]:
     # check if the state has more than three expressions and and if the state
     # exists in the lookup. If the state has 3 or fewer nodes, the if statement
     # will short-circuit, preventing the lookup from being checked. This is
@@ -301,4 +301,9 @@ def solve(state: State, target_number: int, lookup: List[State]=list()) -> Tuple
     # lookup
     lookup.append(state)
     return None, lookup
+
+def solve(state: State, target_number: int) -> Expression | None:
+    solution, _ = _solve(state, target_number, list())
+
+    return solution
 

@@ -15,7 +15,7 @@ def main():
         inputs = [col.number_input(f"number_{i+1}", step=1, value=1, label_visibility="collapsed") for i, col in enumerate(input_cols)]
         st.form_submit_button("Solve")
         start_state = State([Literal(value) for value in inputs])
-        st.write(f"Solution: {solve(start_state, target_box)[0]}")
+        st.write(f"Solution: {solve(start_state, target_box)}")
 
 
 if __name__ == "__main__":
