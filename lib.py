@@ -290,7 +290,7 @@ def _solve(state: State, target_number: int, lookup: List[State]) -> Tuple[Expre
 
     # recursively attempt to solve each of the iterated states
     for next_state, _ in sorted_state_heuristic_pairs:
-        result, lookup = solve(next_state, target_number, lookup)
+        result, lookup = _solve(next_state, target_number, lookup)
 
         # if a solution was found, return it
         if result:
