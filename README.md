@@ -15,9 +15,10 @@ all stages. Each number can only be used once.
 For example, given the numbers 25, 50, 2, 6, 9, and 1, and the target number
 113, a solution could be (25 * 9 + 1) / 2.
 
-While most problems have many possible solutions, you need only find one and
-need not find the most "efficient" (this is, the one which uses the fewest
-numbers).
+It appears that most problems have many possible solutions. However, you need
+only find one and need not find the most "efficient" (this is, the one which
+uses the fewest numbers). This program is designed to find a solution quickly
+rather than spend time finding the most efficient solution.
 
 # How does the solver work?
 
@@ -31,6 +32,12 @@ finding such an expression, in which case there is no solution.
 The heuristic is simple, summing the absolute differences between each
 expression in the problem state and the target and prioritising states with the
 lowest heuristic scores.
+
+# What is it make with?
+
+`main.py` is a simple web interface implemented with Streamlit, a Python
+library for easily creating and deploying simple web apps. Otherwise, the
+application only uses standard library features like dataclasses.
 
 # How do I use the solver?
 
